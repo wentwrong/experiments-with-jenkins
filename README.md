@@ -1,12 +1,12 @@
 # Purpose
 This repo contains example of integrating [Testcafe Jenkins reporter](https://github.com/wentwrong/testcafe-reporter-jenkins) with [Jenkins Testcafe plugin](https://github.com/wentwrong/testcafe-jenkins-plugin).
 
-Jenkinsfile contains code that run tests in parallel distributed among two agents (windows and linux machine). After test execution, testcafe will generate artifacts (screenshots for failed tests and video); Testcafe Plugin for Jenkins will aggregates the artifacts and will show them on test page.
+Jenkinsfile contains code that runs tests in parallel distributed among two agents (windows and linux machine). After test execution, testcafe generates artifacts (screenshots for failed tests and video). Testcafe Plugin for Jenkins will then aggregate the artifacts and show them on test page.
 
 # Reproduction
 ## Requirements
 - Jenkins with [Jenkins Testcafe plugin](https://github.com/wentwrong/testcafe-jenkins-plugin) and Declarative Pipeline >= 1.2 (for parallel) 
-- two agents with installed on them:
+- two agents with:
   - nodejs and npm
   - git
   - firefox browser
