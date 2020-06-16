@@ -1,19 +1,19 @@
 {
   "name": "exampleoftestcafeusage",
   "version": "1.0.0",
-  "description": "Example of Testcafe Jenkins Reporter usage",
+  "description": "Example of TestCafe Jenkins Reporter usage",
   "main": "",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "testcafe firefox:headless test/e2e/**/* -r jenkins:res.xml -S --video videos"
+    "test-e2e": "testcafe"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "testcafe": "^1.8.4",
-    "testcafe-reporter-jenkins": "https://github.com/wentwrong/testcafe-reporter-jenkins/releases/download/v1.0.0/testcafe-reporter-jenkins-1.0.0.tgz"
+    "testcafe-reporter-jenkins": "^1.0.1"
   }
 }

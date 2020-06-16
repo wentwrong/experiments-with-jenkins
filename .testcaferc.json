@@ -1,0 +1,15 @@
+{
+    "browsers": [
+        "firefox:headless"
+    ],
+    "src": "test/e2e/**/*",
+    "screenshots": {
+        "takeOnFails": true, 
+        "fullPage": true
+    },
+    "videoPath": "videos",
+    "reporter": {
+        "name": "jenkins",
+        "output": "report.xml"
+    }
+}
